@@ -9,11 +9,11 @@ The central result is a structural theorem. If the best input is identified and 
 | A best-input label, or the complete fidelity ordering | Every universally nondegrading SEP success map has the fidelity-preserving extraction form. |
 | Unknown ordering | No nonzero SEP success map can always achieve the best input fidelity. |
 
-Both statements hold for every fixed finite number of inputs $`n\ge2`$, every local dimension $`d\ge2`$, and every fidelity floor $`1/d\le f_\star<1`$. The inputs are independent isotropic pairs,
+Both statements hold for every fixed finite number of inputs $`n\ge2`$, every local dimension $`d\ge2`$, and every fidelity floor $`1/d\le f_\star\lt 1`$. The inputs are independent isotropic pairs,
 
 ```math
 \omega(F_i)=F_iP+(1-F_i)\frac{I-P}{d^2-1},
-\qquad f_\star<F_i<1,
+\qquad f_\star\lt F_i\lt 1,
 ```
 
 with a known target $`P=|\Phi_d\rangle\langle\Phi_d|`$. Success can become arbitrarily rare near perfect inputs; the theorem assumes no success floor at that boundary.

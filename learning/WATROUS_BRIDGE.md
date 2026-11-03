@@ -26,7 +26,7 @@ There is a scope distinction in the last two rows. Watrous's Definition 6.25 def
 | $`A^*`$ | $`A^\dagger`$ | Adjoint, including complex conjugation and transpose. |
 | $`A^T`$, $`\overline A`$ | $`A^T`$, $`\overline A`$ | Transpose and entrywise conjugation in the fixed local bases. |
 | $`\mathbb{1}`$ | $`I`$ | Identity operator on the indicated space. |
-| $`\operatorname{vec}(X)`$ | $`\lvert X\rangle\!\rangle`$ | The vector $`\sum_{jk}X_{jk}\lvert j\rangle\lvert k\rangle`$; its normalization depends on $`X`$. |
+| $`\mathrm{vec}(X)`$ | $`\lvert X\rangle\!\rangle`$ | The vector $`\sum_{jk}X_{jk}\lvert j\rangle\lvert k\rangle`$; its normalization depends on $`X`$. |
 | $`\mathrm D(\mathcal X)`$ | A normalized state $`\rho`$ | A positive operator with trace one. An accepted output before division by its trace need not have trace one. |
 | $`F(X,Y)`$ | $`F_{\rm W}(X,Y)`$ on this page | Watrous's fidelity, distinguished from the project's score. |
 | A separable CP map on $`\mathcal X\otimes\mathcal Y`$ | $`\mathcal E`$ on all Alice and Bob inputs | Here $`\mathcal X=\bigotimes_i\mathcal H_{A_i}`$ and $`\mathcal Y=\bigotimes_i\mathcal H_{B_i}`$; each output space has dimension $`d`$. |
@@ -47,13 +47,13 @@ For the project's fixed pure target $`P=|\Phi_d\rangle\langle\Phi_d|`$, this giv
 
 ```math
 F_{\rm Bell}(\rho)
-=\operatorname{Tr}(P\rho)
+=\mathrm{Tr}(P\rho)
 =F_{\rm W}(P,\rho)^2.
 ```
 
 The science pages call this overlap $`F(\rho)`$. The input parameter $`F_i`$ is likewise an overlap. In particular, a guarantee written in Watrous's convention would compare $`F_{\rm W}(P,\rho_{\rm out})`$ with $`\sqrt{F_i}`$.
 
-For an unnormalized accepted output $`Y=\mathcal E(\Omega)`$, define $`p=\operatorname{Tr}Y`$ and $`N=\operatorname{Tr}(PY)`$. Then
+For an unnormalized accepted output $`Y=\mathcal E(\Omega)`$, define $`p=\mathrm{Tr}Y`$ and $`N=\mathrm{Tr}(PY)`$. Then
 
 ```math
 F_{\rm W}(P,Y)=\sqrt N,
@@ -96,7 +96,7 @@ This is the passage from [M13](MILESTONES.md#m13) to [M14](MILESTONES.md#m14).
 Fix noisy interior spectators $`\tau=\bigotimes_{i>1}\omega(F_i)>0`$ and let only $`F_1`$ approach one. The ordered promise remains valid along the final part of this path. Taking the limit in the homogeneous guarantee $`N(F_1)\ge F_1p(F_1)`$ gives
 
 ```math
-\operatorname{Tr}\!\left[(I-P)\mathcal E(P\otimes\tau)\right]=0.
+\mathrm{Tr}\!\left[(I-P)\mathcal E(P\otimes\tau)\right]=0.
 ```
 
 For a Kraus sum, that leakage is a sum of squared Hilbert–Schmidt norms:
@@ -109,7 +109,7 @@ Each term therefore vanishes. Because $`\tau^{1/2}`$ is invertible, it ranges ov
 
 ```math
 \mathcal S_1
-=\operatorname{span}\{|\Phi_d\rangle_1\}\otimes\mathcal H_{\rm rest}
+=\mathrm{span}\{|\Phi_d\rangle_1\}\otimes\mathcal H_{\rm rest}
 ```
 
 into the output Bell ray, possibly sending all of $`\mathcal S_1`$ to zero.
@@ -204,7 +204,7 @@ A_r=s_rU_r\otimes\langle a_r|,
 B_r=t_r\overline{U_r}\otimes\langle b_r|.
 ```
 
-For any input $`\rho_1\otimes\tau`$, with pair 1 independent of the spectators, the accepted operation is a positive mixture of $`U_r\otimes\overline{U_r}`$ acting on pair 1. Its weights depend only on $`\tau`$. Its success probability therefore depends only on the spectators, and its conditional Bell overlap equals $`\operatorname{Tr}(P\rho_1)`$ whenever success occurs. The spectators may be internally correlated or entangled between the laboratories. Independence of pair 1 from them is still needed.
+For any input $`\rho_1\otimes\tau`$, with pair 1 independent of the spectators, the accepted operation is a positive mixture of $`U_r\otimes\overline{U_r}`$ acting on pair 1. Its weights depend only on $`\tau`$. Its success probability therefore depends only on the spectators, and its conditional Bell overlap equals $`\mathrm{Tr}(P\rho_1)`$ whenever success occurs. The spectators may be internally correlated or entangled between the laboratories. Independence of pair 1 from them is still needed.
 
 Knowing the full fidelity ordering gives the same conclusion: strictly ordered fixed spectators still allow $`F_1\uparrow1`$. For an isotropic retained state, every surviving unitary leaves the entire normalized state unchanged.
 

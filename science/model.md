@@ -23,7 +23,7 @@ R=\frac{I-P}{d^2-1},
 \omega(F)=FP+(1-F)R.
 ```
 
-The Bell fidelity of a normalized output state $`\rho`$ is $`F(\rho)=\operatorname{Tr}(P\rho)`$. Fix a threshold $`f_\star\in[1/d,1)`$. The theorem will assume a guarantee only for isotropic inputs with independently variable fidelities in $`(f_\star,1)`$. Every such input is positive definite. In particular, the argument does not need low-fidelity or separable inputs.
+The Bell fidelity of a normalized output state $`\rho`$ is $`F(\rho)=\mathrm{Tr}(P\rho)`$. Fix a threshold $`f_\star\in[1/d,1)`$. The theorem will assume a guarantee only for isotropic inputs with independently variable fidelities in $`(f_\star,1)`$. Every such input is positive definite. In particular, the argument does not need low-fidelity or separable inputs.
 
 A fixed accepted branch is a nonzero completely positive, trace-nonincreasing map
 
@@ -42,7 +42,7 @@ For
 ```math
 \Omega(\boldsymbol F)=\bigotimes_{i=1}^n\omega(F_i),
 \qquad
-p(\boldsymbol F)=\operatorname{Tr}\mathcal E(\Omega(\boldsymbol F)),
+p(\boldsymbol F)=\mathrm{Tr}\mathcal E(\Omega(\boldsymbol F)),
 ```
 
 the conditional output is $`\mathcal E(\Omega)/p`$. Because $`\mathcal E\ne0`$ and $`\Omega>0`$, one has $`p(\boldsymbol F)>0`$ at every interior tuple. This imposes no lower bound on that probability and no requirement that it remain positive at a boundary tuple.

@@ -8,8 +8,8 @@ For an accepted operation $`\mathcal E`$, write
 
 ```math
 \widetilde\sigma=\mathcal E(\Omega(\boldsymbol F)),
-\qquad p=\operatorname{Tr}\widetilde\sigma,
-\qquad N=\operatorname{Tr}(P\widetilde\sigma).
+\qquad p=\mathrm{Tr}\widetilde\sigma,
+\qquad N=\mathrm{Tr}(P\widetilde\sigma).
 ```
 
 The normalized accepted state is $`\widetilde\sigma/p`$ and its target fidelity is $`F_{\rm out}=N/p`$. For several accepted heralding records,

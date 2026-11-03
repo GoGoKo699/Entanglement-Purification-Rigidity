@@ -73,7 +73,7 @@ The allocation is **12 background/preliminary milestones and 18 narrative/innova
 
 **Central question:** Why does a maximally entangled vector turn two local operators into a matrix product with a transpose?
 
-**Understanding target:** Connect $`|\Phi_d\rangle`$ with $`\operatorname{vec}(I_d)/\sqrt d`$ and track the identity relating $`A\otimes B`$ to $`AB^T`$. Keep transpose, adjoint and complex conjugation distinct in the fixed target bases.
+**Understanding target:** Connect $`|\Phi_d\rangle`$ with $`\mathrm{vec}(I_d)/\sqrt d`$ and track the identity relating $`A\otimes B`$ to $`AB^T`$. Keep transpose, adjoint and complex conjugation distinct in the fixed target bases.
 
 **Dependencies and story role:** M02–M03. Provides the bridge from bipartite state constraints to local matrix identities.
 
@@ -103,7 +103,7 @@ The allocation is **12 background/preliminary milestones and 18 narrative/innova
 
 **Central question:** What exactly does the project's fidelity measure?
 
-**Understanding target:** Interpret $`F(\rho)=\operatorname{Tr}(P\rho)`$ as the overlap with the known pure target. Relate it to the square of Watrous's root-fidelity convention and recognize its linearity in an unnormalized output.
+**Understanding target:** Interpret $`F(\rho)=\mathrm{Tr}(P\rho)`$ as the overlap with the known pure target. Relate it to the square of Watrous's root-fidelity convention and recognize its linearity in an unnormalized output.
 
 **Dependencies and story role:** M01, M05–M06. Fixes the score before operations and conditioning are combined.
 
