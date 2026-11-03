@@ -38,7 +38,7 @@ M_B=\begin{pmatrix}r^{-1}&0\\0&1\end{pmatrix},
 The successful product filter is $`L=M_A\otimes M_B`$. It satisfies
 
 ```math
-M_AM_B^T=r^{-1}I_2,
+M_AM_B^{\mathrm{T}}=r^{-1}I_2,
 \qquad L|\Phi_2\rangle=r^{-1}|\Phi_2\rangle.
 ```
 

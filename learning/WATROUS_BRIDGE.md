@@ -24,7 +24,7 @@ There is a scope distinction in the last two rows. Watrous's Definition 6.25 def
 | In Watrous | In this project | Meaning |
 | --- | --- | --- |
 | $`A^*`$ | $`A^\dagger`$ | Adjoint, including complex conjugation and transpose. |
-| $`A^T`$, $`\overline A`$ | $`A^T`$, $`\overline A`$ | Transpose and entrywise conjugation in the fixed local bases. |
+| $`A^{\mathrm{T}}`$, $`\overline A`$ | $`A^{\mathrm{T}}`$, $`\overline A`$ | Transpose and entrywise conjugation in the fixed local bases. |
 | $`\mathbb{1}`$ | $`I`$ | Identity operator on the indicated space. |
 | $`\mathrm{vec}(X)`$ | $`\lvert X\rangle\!\rangle`$ | The vector $`\sum_{jk}X_{jk}\lvert j\rangle\lvert k\rangle`$; its normalization depends on $`X`$. |
 | $`\mathrm D(\mathcal X)`$ | A normalized state $`\rho`$ | A positive operator with trace one. An accepted output before division by its trace need not have trace one. |
@@ -124,17 +124,17 @@ For $`K=A\otimes B`$, insert local spectator basis vectors to obtain square matr
 
 ```math
 (A_u\otimes B_v)|\Phi_d\rangle
-=d^{-1/2}|A_uB_v^T\rangle\!\rangle.
+=d^{-1/2}|A_uB_v^{\mathrm{T}}\rangle\!\rangle.
 ```
 
-The support constraint is thus $`A_uB_v^T=\lambda_{uv}I_d`$ for every $`u,v`$. If one coefficient is nonzero, its two matrices are invertible. Holding one of those matrices fixed forces every slice on the opposite side to be proportional to its active slice. The local maps therefore extract pair 1 and evaluate local spectator bras:
+The support constraint is thus $`A_uB_v^{\mathrm{T}}=\lambda_{uv}I_d`$ for every $`u,v`$. If one coefficient is nonzero, its two matrices are invertible. Holding one of those matrices fixed forces every slice on the opposite side to be proportional to its active slice. The local maps therefore extract pair 1 and evaluate local spectator bras:
 
 ```math
 A=M\otimes\langle a|,
 \qquad
 B=N\otimes\langle b|,
 \qquad
-MN^T=\lambda I_d.
+MN^{\mathrm{T}}=\lambda I_d.
 ```
 
 If every coefficient vanishes, the branch annihilates $`\mathcal S_1`$. These are the two classes in [Lemma 2](../science/product_branch_rigidity.md#product-kraus-extraction). The equal input and output dimensions matter: the active slices are square, so a nonzero scalar identity gives invertibility.
@@ -143,7 +143,7 @@ If every coefficient vanishes, the branch annihilates $`\mathcal S_1`$. These ar
 
 [M17](MILESTONES.md#m17) and [M18](MILESTONES.md#m18) examine the extracted pair.
 
-The relation $`MN^T=\lambda I`$ makes the two local filters reciprocal. For $`L=M\otimes N`$, it implies both
+The relation $`MN^{\mathrm{T}}=\lambda I`$ makes the two local filters reciprocal. For $`L=M\otimes N`$, it implies both
 
 ```math
 L|\Phi_d\rangle=\lambda|\Phi_d\rangle,
@@ -159,7 +159,7 @@ The second identity rules out a target contribution from $`LRL^\dagger`$. If $`x
 
 Equality requires every $`x_j`$ to be equal. [Lemma 3](../science/product_branch_rigidity.md#reciprocal-local-filters) turns this elementary inequality into the fidelity statement: an extraction branch accepts at least as much isotropic error per unit input weight as target per unit input weight. For an interior isotropic input, equality between accepted and input fidelity requires $`M=sU`$ and $`N=t\overline U`$.
 
-The conjugate on Bob's unitary is essential. It ensures $`U(\overline U)^T=UU^\dagger=I`$, so $`U\otimes\overline U`$ fixes the Bell target.
+The conjugate on Bob's unitary is essential. It ensures $`U(\overline U)^{\mathrm{T}}=UU^\dagger=I`$, so $`U\otimes\overline U`$ fixes the Bell target.
 
 ### 4. An annihilating branch still produces strictly positive leakage
 

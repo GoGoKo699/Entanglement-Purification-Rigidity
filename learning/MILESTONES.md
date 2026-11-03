@@ -73,7 +73,7 @@ The allocation is **12 background/preliminary milestones and 18 narrative/innova
 
 **Central question:** Why does a maximally entangled vector turn two local operators into a matrix product with a transpose?
 
-**Understanding target:** Connect $`|\Phi_d\rangle`$ with $`\mathrm{vec}(I_d)/\sqrt d`$ and track the identity relating $`A\otimes B`$ to $`AB^T`$. Keep transpose, adjoint and complex conjugation distinct in the fixed target bases.
+**Understanding target:** Connect $`|\Phi_d\rangle`$ with $`\mathrm{vec}(I_d)/\sqrt d`$ and track the identity relating $`A\otimes B`$ to $`AB^{\mathrm{T}}`$. Keep transpose, adjoint and complex conjugation distinct in the fixed target bases.
 
 **Dependencies and story role:** M02–M03. Provides the bridge from bipartite state constraints to local matrix identities.
 
@@ -225,7 +225,7 @@ The allocation is **12 background/preliminary milestones and 18 narrative/innova
 
 **Central question:** What does the Bell-line image condition require of local spectator slices?
 
-**Understanding target:** Interpret the square matrices $`A_u,B_v`$ obtained by fixing local spectator basis vectors. Understand why every pair of slices obeys $`A_uB_v^T=\lambda_{uv}I_d`$, rather than only one all-perfect input vector being constrained.
+**Understanding target:** Interpret the square matrices $`A_u,B_v`$ obtained by fixing local spectator basis vectors. Understand why every pair of slices obeys $`A_uB_v^{\mathrm{T}}=\lambda_{uv}I_d`$, rather than only one all-perfect input vector being constrained.
 
 **Dependencies and story role:** M03, M05, M10, M14. Expresses the physical locality condition as a family of local matrix equations.
 

@@ -20,7 +20,7 @@ A=M\otimes\langle a|,
 \qquad
 B=N\otimes\langle b|,
 \qquad
-MN^T=\lambda I_d,
+MN^{\mathrm{T}}=\lambda I_d,
 \qquad\text{(5)}
 ```
 
@@ -38,13 +38,13 @@ Use vectorization $`|X\rangle\!\rangle=\sum_{jk}X_{jk}|j\rangle|k\rangle`$. Then
 
 ```math
 (A_u\otimes B_v)|\Phi_d\rangle
-=\frac{1}{\sqrt d}|A_uB_v^T\rangle\!\rangle.
+=\frac{1}{\sqrt d}|A_uB_v^{\mathrm{T}}\rangle\!\rangle.
 ```
 
 The assumed image condition is therefore equivalent to
 
 ```math
-A_uB_v^T=\lambda_{uv}I_d
+A_uB_v^{\mathrm{T}}=\lambda_{uv}I_d
 \quad\text{for all }u,v.
 \qquad\text{(6)}
 ```
@@ -53,7 +53,7 @@ If every $`\lambda_{uv}`$ is zero, $`K`$ annihilates $`\mathcal S_1`$, because s
 
 ## Reciprocal local filters
 
-**Lemma 3.** Suppose $`MN^T=\lambda I_d`$, with $`\lambda\ne0`$, and let $`L=M\otimes N`$. Then
+**Lemma 3.** Suppose $`MN^{\mathrm{T}}=\lambda I_d`$, with $`\lambda\ne0`$, and let $`L=M\otimes N`$. Then
 
 ```math
 L|\Phi_d\rangle=\lambda|\Phi_d\rangle,
@@ -77,7 +77,7 @@ Furthermore,
 
 Equality in the last inequality holds precisely when $`M=sU`$ and $`N=t\overline U`$ for a unitary $`U`$ and nonzero scalars $`s,t`$.
 
-**Proof.** The first identity in (7) follows by vectorization. Since $`N=\lambda M^{-T}`$, one also has $`M^\dagger\overline N=\overline\lambda I`$, which proves the second identity. This second identity is necessary: preserving the Bell vector on the right alone would not, for a general operator, determine the Bell numerator of the noise component. Here it gives
+**Proof.** The first identity in (7) follows by vectorization. Since $`N=\lambda M^{-\mathrm{T}}`$, one also has $`M^\dagger\overline N=\overline\lambda I`$, which proves the second identity. This second identity is necessary: preserving the Bell vector on the right alone would not, for a general operator, determine the Bell numerator of the noise component. Here it gives
 
 ```math
 \langle\Phi_d|LRL^\dagger|\Phi_d\rangle
@@ -130,7 +130,7 @@ For positive $`X,Y`$ on the two output systems,
 
 ```math
 \mathrm{Tr}[P(X\otimes Y)]
-=\frac{1}{d}\mathrm{Tr}(XY^T)
+=\frac{1}{d}\mathrm{Tr}(XY^{\mathrm{T}})
 \le\frac{1}{d}\mathrm{Tr}(X)\mathrm{Tr}(Y).
 \qquad\text{(13)}
 ```
