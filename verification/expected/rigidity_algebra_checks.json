@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "scope": "Finite checks of complex reciprocal-filter identities and strict annihilator leakage",
+  "rows": [
+    {
+      "dimension": 2,
+      "complex_filter_trials": 12,
+      "maximum_bell_vector_residual": 2.471843997619693e-16,
+      "maximum_fidelity_formula_residual": 4.440892098500626e-16,
+      "maximum_filter_fidelity_gain": -7.756802184677447e-06,
+      "annihilating_branch_support_residual": 0.0,
+      "annihilating_branch_operator_gap_minimum": -9.813077866773596e-18,
+      "annihilating_branch_bell_leakage": 0.02333333333333338,
+      "certified_positive_leakage": 0.015555555555555526,
+      "normalized_branch_partial_transpose_minimum": -0.43
+    },
+    {
+      "dimension": 3,
+      "complex_filter_trials": 12,
+      "maximum_bell_vector_residual": 4.1150624583382414e-16,
+      "maximum_fidelity_formula_residual": 6.661338147750939e-16,
+      "maximum_filter_fidelity_gain": -0.00020819058921428546,
+      "annihilating_branch_support_residual": 0.0,
+      "annihilating_branch_operator_gap_minimum": 2.28434109398753e-18,
+      "annihilating_branch_bell_leakage": 0.008749999999999954,
+      "certified_positive_leakage": 0.006562499999999958,
+      "normalized_branch_partial_transpose_minimum": -0.2983333333333334
+    },
+    {
+      "dimension": 4,
+      "complex_filter_trials": 12,
+      "maximum_bell_vector_residual": 3.7091556207238254e-16,
+      "maximum_fidelity_formula_residual": 2.220446049250313e-16,
+      "maximum_filter_fidelity_gain": -3.883018761896562e-05,
+      "annihilating_branch_support_residual": 0.0,
+      "annihilating_branch_operator_gap_minimum": 3.957337929572089e-18,
+      "annihilating_branch_bell_leakage": 0.004666666666666669,
+      "certified_positive_leakage": 0.003733333333333284,
+      "normalized_branch_partial_transpose_minimum": -0.22666666666666666
+    }
+  ]
+}
