@@ -9,11 +9,11 @@ The central result is a structural theorem. If the best input is identified and 
 | A best-input label, or the complete fidelity ordering | Every universally nondegrading SEP success map has the fidelity-preserving extraction form. |
 | Unknown ordering | No nonzero SEP success map can always achieve the best input fidelity. |
 
-Both statements hold for every fixed finite number of inputs $`n\ge2`$, every local dimension $`d\ge2`$, and every fidelity floor $`1/d\le f_\star<1`$. The inputs are independent isotropic pairs,
+Both statements hold for every fixed finite number of inputs $`n\ge2`$, every local dimension $`d\ge2`$, and every fidelity floor $`1/d\le f_\star\lt 1`$. The inputs are independent isotropic pairs,
 
 ```math
 \omega(F_i)=F_iP+(1-F_i)\frac{I-P}{d^2-1},
-\qquad f_\star<F_i<1,
+\qquad f_\star\lt F_i\lt 1,
 ```
 
 with a known target $`P=|\Phi_d\rangle\langle\Phi_d|`$. Success can become arbitrarily rare near perfect inputs; the theorem assumes no success floor at that boundary.
@@ -33,6 +33,10 @@ Start with the [model, information assumptions and connected reading route](scie
 | Reproducible finite calculations and their limits | [Verification](verification/README.md) |
 
 The universality task and earlier no-go results are due to [Zang et al. (2025)](https://doi.org/10.1103/PhysRevLett.134.190803). The [comparison](references/RELATED_WORK.md#relation-to-the-2025-universal-purification-no-go) identifies the arbitrary-SEP high-fidelity strengthening and keeps the earlier catalytic Clifford results separate.
+
+## Learn the argument
+
+The single educational anchor is John Watrous, *The Theory of Quantum Information* (2018). The [Watrous bridge](learning/WATROUS_BRIDGE.md) connects its notation, fidelity convention, quantum operations and separability results to this project's proof. The [30-milestone map](learning/MILESTONES.md) develops 12 background milestones followed by 18 milestones tracing the argument and its physical boundaries. Each milestone links back to the canonical scientific account.
 
 ## Reproduce the checks
 

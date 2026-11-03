@@ -10,18 +10,18 @@ Throughout, use the [model's fixed bases and normalized noise state](model.md): 
 **Lemma 2.** Let $`K=A\otimes B`$ be a product operator from the input laboratories to the two output systems. Write
 
 ```math
-\mathcal S_1=\operatorname{span}\{|\Phi_d\rangle_1\}\otimes\mathcal H_{\rm rest}.
+\mathcal S_1=\mathrm{span}\{|\Phi_d\rangle_1\}\otimes\mathcal H_{\rm rest}.
 ```
 
-If $`K\mathcal S_1\subseteq\operatorname{span}\{|\Phi_d\rangle_{\rm out}\}`$, then either $`K\mathcal S_1=\{0\}`$, or
+If $`K\mathcal S_1\subseteq\mathrm{span}\{|\Phi_d\rangle_{\rm out}\}`$, then either $`K\mathcal S_1=\{0\}`$, or
 
 ```math
 A=M\otimes\langle a|,
 \qquad
 B=N\otimes\langle b|,
 \qquad
-MN^T=\lambda I_d,
-\tag{5}
+MN^{\mathrm{T}}=\lambda I_d,
+\qquad\text{(5)}
 ```
 
 for invertible $`M,N`$ and a scalar $`\lambda\ne0`$.
@@ -38,44 +38,46 @@ Use vectorization $`|X\rangle\!\rangle=\sum_{jk}X_{jk}|j\rangle|k\rangle`$. Then
 
 ```math
 (A_u\otimes B_v)|\Phi_d\rangle
-=\frac{1}{\sqrt d}|A_uB_v^T\rangle\!\rangle.
+=\frac{1}{\sqrt d}|A_uB_v^{\mathrm{T}}\rangle\!\rangle.
 ```
 
 The assumed image condition is therefore equivalent to
 
 ```math
-A_uB_v^T=\lambda_{uv}I_d
+A_uB_v^{\mathrm{T}}=\lambda_{uv}I_d
 \quad\text{for all }u,v.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 If every $`\lambda_{uv}`$ is zero, $`K`$ annihilates $`\mathcal S_1`$, because spectator product vectors span its spectator factor. Otherwise choose $`u_0,v_0`$ with $`\lambda_{u_0v_0}\ne0`$. Both $`A_{u_0}`$ and $`B_{v_0}`$ are invertible. Holding $`v_0`$ fixed in (6) makes every $`A_u`$ proportional to $`A_{u_0}`$; holding $`u_0`$ fixed makes every $`B_v`$ proportional to $`B_{v_0}`$. The proportionality coefficients define the two spectator bras, giving (5). $`\square`$
 
 ## Reciprocal local filters
 
-**Lemma 3.** Suppose $`MN^T=\lambda I_d`$, with $`\lambda\ne0`$, and let $`L=M\otimes N`$. Then
+**Lemma 3.** Suppose $`MN^{\mathrm{T}}=\lambda I_d`$, with $`\lambda\ne0`$, and let $`L=M\otimes N`$. Then
 
 ```math
 L|\Phi_d\rangle=\lambda|\Phi_d\rangle,
 \qquad
 L^\dagger|\Phi_d\rangle=\overline\lambda|\Phi_d\rangle.
-\tag{7}
+\qquad\text{(7)}
 ```
 
 Furthermore,
 
 ```math
-\operatorname{Tr}(PLRL^\dagger)=0,
-\qquad
-\operatorname{Tr}(LRL^\dagger)
-=\frac{\operatorname{Tr}(M^\dagger M)\operatorname{Tr}(N^\dagger N)-|\lambda|^2}{d^2-1}
+\mathrm{Tr}(PLRL^\dagger)=0,
+```
+
+```math
+\mathrm{Tr}(LRL^\dagger)
+=\frac{\mathrm{Tr}(M^\dagger M)\mathrm{Tr}(N^\dagger N)-|\lambda|^2}{d^2-1}
 \ge |\lambda|^2.
-\tag{8}
+\qquad\text{(8)}
 ```
 
 Equality in the last inequality holds precisely when $`M=sU`$ and $`N=t\overline U`$ for a unitary $`U`$ and nonzero scalars $`s,t`$.
 
-**Proof.** The first identity in (7) follows by vectorization. Since $`N=\lambda M^{-T}`$, one also has $`M^\dagger\overline N=\overline\lambda I`$, which proves the second identity. This second identity is necessary: preserving the Bell vector on the right alone would not, for a general operator, determine the Bell numerator of the noise component. Here it gives
+**Proof.** The first identity in (7) follows by vectorization. Since $`N=\lambda M^{-\mathrm{T}}`$, one also has $`M^\dagger\overline N=\overline\lambda I`$, which proves the second identity. This second identity is necessary: preserving the Bell vector on the right alone would not, for a general operator, determine the Bell numerator of the noise component. Here it gives
 
 ```math
 \langle\Phi_d|LRL^\dagger|\Phi_d\rangle
@@ -85,10 +87,10 @@ Equality in the last inequality holds precisely when $`M=sU`$ and $`N=t\overline
 The trace formula follows from $`R=(I-P)/(d^2-1)`$. If $`x_1,\ldots,x_d>0`$ are the squared singular values of $`M`$, then
 
 ```math
-\operatorname{Tr}(M^\dagger M)\operatorname{Tr}(N^\dagger N)
+\mathrm{Tr}(M^\dagger M)\mathrm{Tr}(N^\dagger N)
 =|\lambda|^2\left(\sum_jx_j\right)\left(\sum_jx_j^{-1}\right)
 \ge d^2|\lambda|^2.
-\tag{9}
+\qquad\text{(9)}
 ```
 
 Cauchy–Schwarz is an equality exactly when all $`x_j`$ are equal. This means $`M=sU`$, and (5) then implies $`N=t\overline U`$. $`\square`$
@@ -97,9 +99,11 @@ For reference, the conditional fidelity produced by this filter on an isotropic 
 
 ```math
 \frac{F}{F+(1-F)(\chi-1)/(d^2-1)}\le F,
-\qquad
-\chi=\frac{\operatorname{Tr}(M^\dagger M)\operatorname{Tr}(N^\dagger N)}{|\lambda|^2}\ge d^2.
-\tag{10}
+```
+
+```math
+\chi=\frac{\mathrm{Tr}(M^\dagger M)\mathrm{Tr}(N^\dagger N)}{|\lambda|^2}\ge d^2.
+\qquad\text{(10)}
 ```
 
 Thus a reciprocal filter that preserves the perfect target cannot improve the isotropic input fidelity.
@@ -109,8 +113,8 @@ Thus a reciprocal filter that preserves the perfect target cannot improve the is
 **Lemma 4.** Let $`\tau>0`$ be any spectator state, possibly entangled between the laboratories. If a nonzero product operator $`K=A\otimes B`$ annihilates $`\mathcal S_1`$, then
 
 ```math
-\operatorname{Tr}\!\left[(I-P)K(R\otimes\tau)K^\dagger\right]>0.
-\tag{11}
+\mathrm{Tr}\!\left[(I-P)K(R\otimes\tau)K^\dagger\right]>0.
+\qquad\text{(11)}
 ```
 
 **Proof.** Choose $`\mu>0`$ such that $`\tau\ge\mu I`$. Annihilation of $`\mathcal S_1`$ means $`K(P\otimes I)=0`$. Positivity therefore gives
@@ -119,24 +123,24 @@ Thus a reciprocal filter that preserves the perfect target cannot improve the is
 K(R\otimes\tau)K^\dagger
 \ge\frac{\mu}{d^2-1}K[(I-P)\otimes I]K^\dagger
 =\frac{\mu}{d^2-1}KK^\dagger.
-\tag{12}
+\qquad\text{(12)}
 ```
 
 For positive $`X,Y`$ on the two output systems,
 
 ```math
-\operatorname{Tr}[P(X\otimes Y)]
-=\frac{1}{d}\operatorname{Tr}(XY^T)
-\le\frac{1}{d}\operatorname{Tr}(X)\operatorname{Tr}(Y).
-\tag{13}
+\mathrm{Tr}[P(X\otimes Y)]
+=\frac{1}{d}\mathrm{Tr}(XY^{\mathrm{T}})
+\le\frac{1}{d}\mathrm{Tr}(X)\mathrm{Tr}(Y).
+\qquad\text{(13)}
 ```
 
 Apply this to $`KK^\dagger=AA^\dagger\otimes BB^\dagger`$. Equations (12)–(13) imply the explicit strict bound
 
 ```math
-\operatorname{Tr}\!\left[(I-P)K(R\otimes\tau)K^\dagger\right]
-\ge\frac{\mu}{d^2-1}\left(1-\frac1d\right)\operatorname{Tr}(KK^\dagger)>0.
-\tag{14}
+\mathrm{Tr}\!\left[(I-P)K(R\otimes\tau)K^\dagger\right]
+\ge\frac{\mu}{d^2-1}\left(1-\frac1d\right)\mathrm{Tr}(KK^\dagger)>0.
+\qquad\text{(14)}
 ```
 
 The final inequality uses $`d\ge2`$ and $`K\ne0`$. The argument does not assume that the spectators or the branch output are separable. $`\square`$
