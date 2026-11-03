@@ -4,7 +4,7 @@ The universal statements are established by the [written proof](../science/order
 
 ## Run
 
-Use Python 3.10 or later and the pinned NumPy dependency. The recorded executions used Python 3.12.14 and NumPy 2.3.5.
+Use Python 3.11 or later and the pinned NumPy dependency. The recorded executions used Python 3.12.14 and NumPy 2.3.5.
 
 ```bash
 python3 -m pip install -r verification/requirements.txt
@@ -37,3 +37,9 @@ Every constructed accepted operation is checked to be trace nonincreasing. The c
 ## Analytical review boundaries
 
 The proof's decisive steps are full-rank boundary support, product-slice factorization, the reciprocal-filter equality condition, and strictly positive annihilator leakage. None is inferred from the numerical reports. The [related-work account](../references/RELATED_WORK.md) records which prior results and source versions were compared. Internal algebraic review and these reproducible calculations do not constitute independent peer review.
+
+## Hosted mathematical display
+
+The [hosted-math workflow](../.github/workflows/hosted-math.yml) checks every Markdown page at the pull request's exact source commit. It compares the actual GitHub MathML with locally compiled source expressions at viewport widths of 1440 and 760 pixels, checks expression coverage and display geometry, and records full-page screenshots, extracted mathematics and reports as a workflow artifact. The explicit [expression contract](hosted/math-contract.json) provides additional checks on headline identities. The job has read-only repository permissions and checks out without persistent credentials.
+
+The collector and comparison helper in `hosted/` use the dependencies pinned in the workflow. A passing automated report does not certify scientific correctness or replace visual inspection of the captured equation bodies and page layout. A source change requires a fresh capture; network or access failures are reported as failures, not accepted as display evidence.

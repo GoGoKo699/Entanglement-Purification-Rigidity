@@ -34,6 +34,10 @@ Start with the [model, information assumptions and connected reading route](scie
 
 The universality task and earlier no-go results are due to [Zang et al. (2025)](https://doi.org/10.1103/PhysRevLett.134.190803). The [comparison](references/RELATED_WORK.md#relation-to-the-2025-universal-purification-no-go) identifies the arbitrary-SEP high-fidelity strengthening and keeps the earlier catalytic Clifford results separate.
 
+## Learn the argument
+
+The single educational anchor is John Watrous, *The Theory of Quantum Information* (2018). The [Watrous bridge](learning/WATROUS_BRIDGE.md) connects its notation, fidelity convention, quantum operations and separability results to this project's proof. The [30-milestone map](learning/MILESTONES.md) develops 12 background milestones followed by 18 milestones tracing the argument and its physical boundaries. Each milestone links back to the canonical scientific account.
+
 ## Reproduce the checks
 
 From the repository root:

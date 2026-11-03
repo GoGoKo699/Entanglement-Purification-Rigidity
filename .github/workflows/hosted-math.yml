@@ -1,0 +1,45 @@
+name: Hosted mathematics
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  hosted-math:
+    name: Rendered mathematics
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out the exact proposed source
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+      - name: Set up Node.js
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7
+        with:
+          node-version: '24'
+      - name: Install the pinned capture dependencies
+        run: |
+          npm install --prefix "$RUNNER_TEMP/hosted-deps" --no-audit --no-fund playwright@1.56.1 mathjax-full@3.2.1
+          "$RUNNER_TEMP/hosted-deps/node_modules/.bin/playwright" install --with-deps chromium
+      - name: Compare source mathematics with GitHub
+        env:
+          SOURCE_REVISION: ${{ github.event.pull_request.head.sha }}
+        run: |
+          NODE_PATH="$RUNNER_TEMP/hosted-deps/node_modules" node verification/hosted/capture_hosted_math.cjs \
+            --root "$GITHUB_WORKSPACE" \
+            --repository "$GITHUB_REPOSITORY" \
+            --revision "$SOURCE_REVISION" \
+            --contract verification/hosted/math-contract.json \
+            --output "$RUNNER_TEMP/hosted-evidence"
+      - name: Preserve the capture and reports
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7
+        with:
+          name: hosted-math-${{ github.event.pull_request.head.sha }}
+          path: ${{ runner.temp }}/hosted-evidence/
+          if-no-files-found: warn
+          retention-days: 7

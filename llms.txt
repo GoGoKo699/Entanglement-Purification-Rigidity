@@ -19,15 +19,21 @@ Canonical entrypoints:
   the distinct catalytic Clifford and unknown-target results.
 - references/references.bib: structured primary-source bibliography.
 - verification/README.md: finite-check commands, expected behavior and limits.
+- learning/WATROUS_BRIDGE.md: the single Watrous (2018) educational anchor,
+  verified textbook pointers, convention translation and one worked example.
+- learning/MILESTONES.md: exactly 30 project milestones, with 12 background
+  and 18 narrative milestones; canonical proofs remain in science/.
 
 Reader routes:
 - For the story, read model, interpretation and the worked examples.
 - For the theorem, read model, branch lemmas and ordered purification in order.
 - For attribution, use the exact theorem and source-version comparisons.
 - For reproduction, run the two documented scripts with the pinned dependency.
+- For foundations, use the Watrous bridge and follow the milestone dependencies.
 
 Preserve these distinctions:
 - Fidelity is overlap with the fixed target, without a square root.
+  It equals the square of Watrous's root fidelity against the pure Bell target.
 - A nonzero success map has positive success on interior full-rank inputs,
   but success may vanish at a perfect boundary. No boundary division is used.
 - The map is fixed over the family. Adaptive measurements and classical

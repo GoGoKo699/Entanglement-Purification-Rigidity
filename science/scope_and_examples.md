@@ -57,7 +57,7 @@ F_{\rm out}
 =\frac{F}{F+(1-F)(r^2+1+r^{-2})/3}.
 ```
 
-For $`r>1`$ and $`0<F<1`$, this is strictly smaller than $`F`$. At $`r=2`$ and $`F=9/10`$,
+For $`r>1`$ and $`0\lt F<1`$, this is strictly smaller than $`F`$. At $`r=2`$ and $`F=9/10`$,
 
 ```math
 p=\frac{43}{160},
@@ -121,7 +121,7 @@ In particular,
 ```math
 F_{\rm out}-F
 =\frac{(1-F)(4F-1)(2F-1)}{9p}>0
-\qquad\text{for }\frac12<F<1.
+\qquad\text{for }\frac12\lt F<1.
 ```
 
 This familiar improvement is compatible with rigidity. The identical-input promise confines the allowed fidelity vectors to a diagonal. One cannot take one input to perfection while keeping its spectators fixed and noisy within that promise.
@@ -145,7 +145,7 @@ A restricted noise promise changes the conclusion. Let
 +(1-F)|\Psi^+\rangle\langle\Psi^+|,
 ```
 
-with $`1/2<F<1`$. These states have rank two. Zang et al. explicitly establish the universality of the bilateral controlled-NOT step for this family in Proposition 37 [1]. The probability and fidelity can also be read directly from its four error cases.
+with $`1/2\lt F<1`$. These states have rank two. Zang et al. explicitly establish the universality of the bilateral controlled-NOT step for this family in Proposition 37 [1]. The probability and fidelity can also be read directly from its four error cases.
 
 Write $`b=0`$ for $`\Phi^+`$ and $`b=1`$ for $`\Psi^+`$. The bilateral controlled-NOT sends
 

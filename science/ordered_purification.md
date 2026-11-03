@@ -153,7 +153,7 @@ F\!\left(\frac{\mathcal E(\Omega(\boldsymbol F))}{p(\boldsymbol F)}\right)
 
 for every independently variable tuple $`F_i\in(f_\star,1)`$.
 
-**Proof.** Such a map would satisfy Theorem 1 on the subfamily where pair 1 is best. Its Kraus structure would therefore preserve the first pair's fidelity for every independent isotropic tuple, including tuples outside that ordering region. Choose $`F_2>F_1`$. The input is positive definite, so the nonzero map succeeds with positive probability, but its conditional fidelity is $`F_1<F_2`$. This contradicts (21). $`\square`$
+**Proof.** Such a map would satisfy Theorem 1 on the subfamily where pair 1 is best. Its Kraus structure would therefore preserve the first pair's fidelity for every independent isotropic tuple, including tuples outside that ordering region. Choose $`F_2>F_1`$. The input is positive definite, so the nonzero map succeeds with positive probability, but its conditional fidelity is $`F_1\lt F_2`$. This contradicts (21). $`\square`$
 
 Since the promised isotropic family is a subset of the full set of high-fidelity states, the impossibility also applies to a guarantee over all independent states above the same fidelity threshold.
 

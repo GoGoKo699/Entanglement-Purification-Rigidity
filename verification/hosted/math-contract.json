@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "expressions": [
+    {
+      "path": "science/model.md",
+      "index": 9,
+      "source_sha256": "c86e291f7623dfe4a60bc09e27fa957d4ab860f3fa1b5d3fecf54ec3f2b14ddf",
+      "required_text": [
+        "E(X)=∑rKrXKr†",
+        "Kr=Ar⊗Br",
+        "∑rKr†Kr≤I"
+      ]
+    },
+    {
+      "path": "science/product_branch_rigidity.md",
+      "index": 8,
+      "source_sha256": "e750f4ccff3aa2a2ef06f9b027129a177a44fb0350e57ef663997e308b7371db",
+      "required_text": [
+        "A=M⊗⟨a|",
+        "B=N⊗⟨b|",
+        "MNT=λId",
+        "(5)"
+      ]
+    },
+    {
+      "path": "science/product_branch_rigidity.md",
+      "index": 33,
+      "source_sha256": "0d169ccfbf41860e248363a7d546464477b2e72f7f29bc9524dc7e223da861d7",
+      "required_text": [
+        "L|Φd⟩=λ|Φd⟩",
+        "L†|Φd⟩=λ―|Φd⟩",
+        "(7)"
+      ]
+    },
+    {
+      "path": "science/product_branch_rigidity.md",
+      "index": 63,
+      "source_sha256": "079adb92b206e80c9503f4af33a887a01a6561240f8bdfa44f7d9aeb20a384ee",
+      "required_text": [
+        "Tr[(I−P)K(R⊗τ)K†]≥",
+        "μ",
+        "Tr(KK†)>0",
+        "(14)"
+      ]
+    },
+    {
+      "path": "science/ordered_purification.md",
+      "index": 10,
+      "source_sha256": "a0ee84fbaff954351a4143d5a753cd2475bc3de859510756a4708447a7c49ada",
+      "required_text": [
+        "Tr[PE(Ω(F))]≥F1TrE(Ω(F)).",
+        "(1)"
+      ]
+    },
+    {
+      "path": "science/ordered_purification.md",
+      "index": 12,
+      "source_sha256": "aa279f20077678a3fedb0f0c1c0a987d015baf7ba76f9f56bf44caf504ac6c9e",
+      "required_text": [
+        "Ar=srUr⊗⟨ar|",
+        "Br=trUr―⊗⟨br|",
+        "(2)"
+      ]
+    },
+    {
+      "path": "science/ordered_purification.md",
+      "index": 57,
+      "source_sha256": "dd47c719b08cee908f14068b91a4283929f98a04cd43439b24f4a68ec57abbcc",
+      "required_text": [
+        "Tr[PE(ρ⊗τ)]=F(ρ)∑rqr(τ)",
+        "TrE(ρ⊗τ)=∑rqr(τ)",
+        "(20)"
+      ]
+    },
+    {
+      "path": "science/ordered_purification.md",
+      "index": 62,
+      "source_sha256": "c478b2907ac5b9a701def9d55e5b7c09be4d122cad8f522ccb44b8dfa99d37f0",
+      "required_text": [
+        "F(E(Ω(F))p(F))≥maxiFi",
+        "(21)"
+      ]
+    },
+    {
+      "path": "learning/WATROUS_BRIDGE.md",
+      "index": 24,
+      "source_sha256": "1b05056ce3077e8e2013965c5376f508252f72cc52e11aa979a08d28f496ff0a",
+      "expected_text": "FBell(ρ)=Tr(Pρ)=FW(P,ρ)2."
+    },
+    {
+      "path": "learning/WATROUS_BRIDGE.md",
+      "index": 32,
+      "source_sha256": "f2eb1f75887dd94cd58dbf0f0774d36e0eaa1f5849a3802c102e801360ca3c4e",
+      "required_text": [
+        "FW(P,Y)=N",
+        "FW(P,Y/p)=N/p",
+        "FBell(Y/p)=N/p."
+      ]
+    }
+  ]
+}
