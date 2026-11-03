@@ -1,0 +1,50 @@
+# Entanglement Purification Rigidity
+
+This project classifies fixed separable success maps that never degrade a
+promised best independent isotropic pair, and derives an exact unknown-order
+universal-purification impossibility for every fixed finite batch and dimension.
+
+Canonical entrypoints:
+- README.md: scientific consequence, direct reading routes, scope and commands.
+- science/model.md: fixed known Bell target, independent open fidelity family,
+  finite input/output dimensions, SEP success map, information and resources.
+- science/product_branch_rigidity.md: Lemmas 2–4, product-slice extraction,
+  reciprocal filters and strict leakage for annihilating branches.
+- science/ordered_purification.md: authoritative Theorem 1 and Corollary 5,
+  complete proofs, ordering promise and arbitrary independent spectators.
+- science/scope_and_examples.md: success-weighted accepted mixtures, physical
+  filters, boundary-zero success, recurrence, restricted noise and correlations.
+- science/interpretation.md: connected explanation of the proof and consequence.
+- references/RELATED_WORK.md: precise comparison and attribution, including
+  the distinct catalytic Clifford and unknown-target results.
+- references/references.bib: structured primary-source bibliography.
+- verification/README.md: finite-check commands, expected behavior and limits.
+
+Reader routes:
+- For the story, read model, interpretation and the worked examples.
+- For the theorem, read model, branch lemmas and ordered purification in order.
+- For attribution, use the exact theorem and source-version comparisons.
+- For reproduction, run the two documented scripts with the pinned dependency.
+
+Preserve these distinctions:
+- Fidelity is overlap with the fixed target, without a square root.
+- A nonzero success map has positive success on interior full-rank inputs,
+  but success may vanish at a perfect boundary. No boundary division is used.
+- The map is fixed over the family. Adaptive measurements and classical
+  communication inside that map are allowed.
+- The known-best structural theorem applies to every product Kraus branch
+  in any finite separable decomposition. The output need not be the same
+  arbitrary input state; its Bell fidelity is preserved. For an isotropic
+  retained pair, the entire normalized state is preserved.
+- Spectators can be internally correlated in the structural consequence,
+  but the retained pair must be independent of them.
+- An annihilating branch can have an entangled output; its strictly positive
+  target-error leakage is what the proof needs.
+- The unknown-order no-go covers arbitrary finite n,d and fidelity floors
+  below one. It does not quantify an optimal approximate-universality gap.
+- No additional shared entanglement is supplied. The prior catalytic Clifford
+  result is not subsumed by this unassisted arbitrary-SEP theorem.
+- Exact heterogeneous best-input guarantees differ from identical-input,
+  average-baseline, randomized-baseline and unknown-target purification tasks.
+- Numerical checks corroborate finite algebra and examples. They do not prove
+  the universal theorem or constitute independent peer review.

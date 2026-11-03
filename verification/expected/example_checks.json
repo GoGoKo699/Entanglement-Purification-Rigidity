@@ -1,0 +1,81 @@
+{
+  "status": "passed",
+  "scope": "Dense-matrix checks of local operations in six worked-example rows",
+  "rows": [
+    {
+      "case": "reciprocal_filter",
+      "success_probability": 0.26874999999999993,
+      "bell_numerator": 0.22499999999999992,
+      "accepted_fidelity": 0.8372093023255813,
+      "exact_reference": [
+        "43/160",
+        "9/40",
+        "36/43"
+      ],
+      "maximum_absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "case": "spectator_01",
+      "success_probability": 0.1333333333333333,
+      "bell_numerator": 0.11999999999999994,
+      "accepted_fidelity": 0.8999999999999998,
+      "exact_reference": [
+        "2/15",
+        "3/25",
+        "9/10"
+      ],
+      "maximum_absolute_error": 2.220446049250313e-16
+    },
+    {
+      "case": "isotropic_recurrence_identical",
+      "success_probability": 0.8755555555555552,
+      "bell_numerator": 0.8111111111111106,
+      "accepted_fidelity": 0.9263959390862941,
+      "exact_reference": [
+        "197/225",
+        "73/90",
+        "365/394"
+      ],
+      "maximum_absolute_error": 5.551115123125783e-16
+    },
+    {
+      "case": "isotropic_recurrence_unequal",
+      "success_probability": 0.9275555555555551,
+      "bell_numerator": 0.8911111111111105,
+      "accepted_fidelity": 0.9607091518926687,
+      "exact_reference": [
+        "2087/2250",
+        "401/450",
+        "2005/2087"
+      ],
+      "maximum_absolute_error": 5.551115123125783e-16
+    },
+    {
+      "case": "bit_flip_recurrence",
+      "success_probability": 0.5799999999999997,
+      "bell_numerator": 0.5399999999999997,
+      "accepted_fidelity": 0.9310344827586206,
+      "exact_reference": [
+        "29/50",
+        "27/50",
+        "27/29"
+      ],
+      "maximum_absolute_error": 3.3306690738754696e-16
+    },
+    {
+      "case": "correlated_spectator_00",
+      "success_probability": 0.4166666666666665,
+      "bell_numerator": 0.31999999999999984,
+      "accepted_fidelity": 0.7679999999999999,
+      "exact_reference": [
+        "5/12",
+        "8/25",
+        "96/125"
+      ],
+      "maximum_absolute_error": 1.6653345369377348e-16
+    }
+  ],
+  "all_perfect_spectator_01_success": 0.0,
+  "correlated_input_minimum_eigenvalue": 0.009444444444444425,
+  "correlated_input_nonproduct_frobenius_distance": 0.03000000000000004
+}
